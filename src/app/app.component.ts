@@ -9,9 +9,11 @@ import { ItemsService } from './shared/components/services/items.services';
 })
 export class AppComponent implements OnInit {
   title = 'wallapop-item-manager';
+  items: Item[] =[]
 
 
-  constructor(private itemsService: ItemsService){
+  constructor(
+    private itemsService: ItemsService){
 
   }
 
@@ -22,7 +24,9 @@ export class AppComponent implements OnInit {
 
   onGetItems(): void {
     this.itemsService.getItems().subscribe(
-      (response) => console.log(response),
+      (response: any) => {this.items = response.items;
+        console.log(this.items)
+      }, 
       (error: any) => console.log(error),
       () => console.log('done getting items')
 

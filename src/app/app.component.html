@@ -7,4 +7,11 @@
 
     </ul>
   </nav>
+ 
+    <ul *ngIf="items && items.length > 0 ">
+      <li><app-item *ngFor="let item of items" [item]="item"></app-item>
+      </li>
+
+    </ul>
+  
 </div>

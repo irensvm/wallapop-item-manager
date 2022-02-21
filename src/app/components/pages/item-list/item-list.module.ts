@@ -7,7 +7,6 @@ import { ItemListComponent } from './item-list.component';
 
 @NgModule({
   declarations: [
-    ItemListComponent
   ],
   imports: [
     CommonModule,
