@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+nav ul {
+    list-style: none;
+    margin: 0;
+
+}
+
+nav ul li {
+    float: left;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    display: block;
+    color: #85ffd3;
+    height: 30px;
+
+}
