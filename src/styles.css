@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Montserrat:wght@100;200;400;600&display=swap');
+
 nav ul {
     list-style: none;
     margin: 0;
@@ -14,4 +16,34 @@ nav ul li a {
     color: #85ffd3;
     height: 30px;
 
+}
+
+.card {
+    background-color: #e9ffb4;
+
+}
+
+.card-body  {
+    color: #136D60
+}
+.card-title {
+    color: #04413C;
+
+}
+.list-group-item {
+    color: #13C1AC;
+    background-color: #FFCEE6;
+
+}
+
+.card-text{
+    overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.card-img-top {
+    width: 100%;
+  height: auto;
 }
