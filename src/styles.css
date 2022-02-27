@@ -3,7 +3,9 @@
 * {
     box-sizing: border-box;
 }
-
+html {
+    font-size: 16px;
+}
 body {
     margin: 0;
     font-family: "Crimson", sans-serif;
@@ -14,10 +16,29 @@ a {
     text-decoration: none;
 }
 
+.items-array {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+
+}
 
 .card {
-    background-color: #e9ffb4;
+    background-color: #e9ffb4;   
+    border: 1px solid #FFCEE6 ;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 
+
+
+}
+
+.card:hover {
+    opacity: 0.9;
 }
 
 .card-body {

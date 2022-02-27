@@ -1,17 +1,8 @@
 <div>
   <app-header></app-header>
   <router-outlet></router-outlet>
- <div>
-   <div>
-     <div *ngIf="items && items.length > 0 "></div>
+  <div class="items-array">
+    <div *ngIf="items && items.length > 0"></div>
     <app-item *ngFor="let item of items" [item]="item"></app-item>
-
-   </div>
- </div>
-    <ul *ngIf="items && items.length > 0 ">
-      <li><app-item *ngFor="let item of items" [item]="item"></app-item>
-      </li>
-
-    </ul>
-  
+  </div>
 </div>
